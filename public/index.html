@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SAVED Group System</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<button id="theme-toggle" class="btn-small theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">Toggle theme</button>
+<div id="app"></div>
+<footer class="app-footer">
+  <div class="footer-brand">
+    <span class="footer-logo">SAVED</span>
+    <span class="footer-tag">Group Savings &amp; Credit Platform</span>
+    <span class="footer-copyline">&copy; 2026 University of Rwanda | College of Education</span>
+  </div>
+  <div class="footer-center">
+    <div class="footer-social">
+      <a href="#" onclick="event.preventDefault()">Customer Support</a>
+      <a href="#" onclick="event.preventDefault()">Terms of Service</a>
+      <a href="#" onclick="event.preventDefault()">Privacy Policy</a>
+    </div>
+    <div class="footer-divider"></div>
+  </div>
+  <div class="footer-helper">
+    Support Desk: <strong>Eric</strong> &middot; <span class="footer-phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.43 2.43z" fill="currentColor"/></svg> +250 794 707 599</span>
+  </div>
+</footer>
+<!-- Toast container -->
+<div id="toast-root" aria-live="polite" aria-atomic="true"></div>
+<script src="app.js?v=3" defer></script>
+</body>
+</html>
