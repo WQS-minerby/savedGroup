@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: saved-system
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /tmp/saved-data
+      - key: JWT_SECRET
+        generateValue: true
